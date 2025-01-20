@@ -45,6 +45,18 @@ local redzlib = {
 			["Color Theme"] = Color3.fromRGB(150, 0, 255),
 			["Color Text"] = Color3.fromRGB(240, 240, 240),
 			["Color Dark Text"] = Color3.fromRGB(180, 180, 180)
+		},
+		Yellow = { -- New Yellow Theme Added
+			["Color Hub 1"] = ColorSequence.new({
+				ColorSequenceKeypoint.new(0.00, Color3.fromRGB(50, 50, 0)),
+				ColorSequenceKeypoint.new(0.50, Color3.fromRGB(75, 75, 0)),
+				ColorSequenceKeypoint.new(1.00, Color3.fromRGB(50, 50, 0))
+			}),
+			["Color Hub 2"] = Color3.fromRGB(60, 60, 0),
+			["Color Stroke"] = Color3.fromRGB(80, 80, 0),
+			["Color Theme"] = Color3.fromRGB(255, 223, 0), -- Yellow
+			["Color Text"] = Color3.fromRGB(255, 255, 200),
+			["Color Dark Text"] = Color3.fromRGB(200, 200, 150)
 		}
 	},
 	Info = {
@@ -53,7 +65,7 @@ local redzlib = {
 	Save = {
 		UISize = {550, 380},
 		TabSize = 160,
-		Theme = "Darker"
+		Theme = "Yellow" -- Set Yellow as the default theme
 	},
 	Settings = {},
 	Connection = {},
