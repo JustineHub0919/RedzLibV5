@@ -45,6 +45,30 @@ local redzlib = {
 			["Color Theme"] = Color3.fromRGB(150, 0, 255),
 			["Color Text"] = Color3.fromRGB(240, 240, 240),
 			["Color Dark Text"] = Color3.fromRGB(180, 180, 180)
+		},
+		Red = { -- New Red Theme
+			["Color Hub 1"] = ColorSequence.new({
+				ColorSequenceKeypoint.new(0.00, Color3.fromRGB(50, 0, 0)),
+				ColorSequenceKeypoint.new(0.50, Color3.fromRGB(100, 0, 0)),
+				ColorSequenceKeypoint.new(1.00, Color3.fromRGB(50, 0, 0))
+			}),
+			["Color Hub 2"] = Color3.fromRGB(80, 0, 0),
+			["Color Stroke"] = Color3.fromRGB(120, 0, 0),
+			["Color Theme"] = Color3.fromRGB(255, 0, 0), -- Red
+			["Color Text"] = Color3.fromRGB(255, 200, 200),
+			["Color Dark Text"] = Color3.fromRGB(200, 150, 150)
+		},
+		Blue = { -- New Blue Theme
+			["Color Hub 1"] = ColorSequence.new({
+				ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 50)),
+				ColorSequenceKeypoint.new(0.50, Color3.fromRGB(0, 0, 100)),
+				ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 50))
+			}),
+			["Color Hub 2"] = Color3.fromRGB(0, 0, 80),
+			["Color Stroke"] = Color3.fromRGB(0, 0, 120),
+			["Color Theme"] = Color3.fromRGB(0, 0, 255), -- Blue
+			["Color Text"] = Color3.fromRGB(200, 200, 255),
+			["Color Dark Text"] = Color3.fromRGB(150, 150, 200)
 		}
 	},
 	Info = {
@@ -53,7 +77,7 @@ local redzlib = {
 	Save = {
 		UISize = {550, 380},
 		TabSize = 160,
-		Theme = "Darker"
+		Theme = "Red" -- Set to Red as the default theme
 	},
 	Settings = {},
 	Connection = {},
